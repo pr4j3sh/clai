@@ -1,15 +1,15 @@
 {
   "name": "@pr4j3sh/clai",
   "description": "command line ai assistant",
-  "version": "1.0.2",
-  "main": "dist/bundle.cjs",
-  "module": "dist/bundle.mjs",
+  "version": "1.0.3",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "exports": {
     "require": "dist/index.cjs",
     "import": "dist/index.mjs"
   },
   "bin": {
-    "clai": "dist/bundle.cjs"
+    "clai": "dist/index.cjs"
   },
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
