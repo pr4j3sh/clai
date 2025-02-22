@@ -12,9 +12,9 @@ if (!prompt) {
 }
 
 if (prompt === "help" || prompt === "-h") {
-  console.log('usage: clai ["prompt"] [help | -h]');
-  console.log('"prompt"\tprompt for clai, must be enclosed in quotes');
-  console.log("help | -h\tdisplays help message");
+  console.log('usage: clai ["prompt"] [help | -h]\n');
+  console.log('\t"prompt"\tprompt for clai, must be enclosed in quotes');
+  console.log("\thelp | -h\tdisplays help message");
 } else {
   ai(prompt)
     .then((res) => console.log(res))
