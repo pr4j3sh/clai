@@ -1,9 +1,22 @@
 #!/usr/bin/env node
 
-const { greet } = require("./src/utils");
+const { argv, exit } = require("node:process");
+const { ai } = require("@pr4j3sh/ai");
 
-console.log(greet("frames"));
+const args = argv.slice(2);
+const prompt = args[0];
 
-module.exports = {
-  greet,
-};
+if (!prompt) {
+  console.error("please provide a prompt");
+  exit(1);
+}
+
+if (prompt === "help" || prompt === "-h") {
+  console.log('usage: clai ["prompt"] [help | -h]');
+  console.log('"prompt"\tprompt for clai, must be enclosed in quotes');
+  console.log("help | -h\tdisplays help message");
+} else {
+  ai(prompt)
+    .then((res) => console.log(res))
+    .catch((err) => console.error(err));
+}

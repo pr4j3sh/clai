@@ -11,8 +11,10 @@ npm i @pr4j3sh/clai
 ## Usage
 
 ```bash
-clai
+clai ["prompt"] [help | -h]
 ```
+
+> Use
 
 ## Reference
 
