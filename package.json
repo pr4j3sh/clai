@@ -1,0 +1,47 @@
+{
+  "name": "@pr4j3sh/clai",
+  "description": "command line ai assistant",
+  "version": "1.0.0",
+  "main": "dist/bundle.cjs",
+  "module": "dist/bundle.mjs",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "import": "./dist/index.mjs"
+  },
+  "bin": {
+    "clai": "./dist/bundle.cjs"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "node esbuild.config.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "llm",
+    "gpt",
+    "ai",
+    "assistant",
+    "npm",
+    "javascript",
+    "commonjs",
+    "frames"
+  ],
+  "author": "Prajesh Pratap Singh <prajesh.eleven118@gmail.com> (https://pr4j3sh.vercel.app/)",
+  "license": "MIT",
+  "homepage": "https://github.com/pr4j3sh/clai#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr4j3sh/clai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pr4j3sh/clai/issues"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "nodemon": "^3.1.7"
+  }
+}
