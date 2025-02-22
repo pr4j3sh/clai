@@ -5,7 +5,7 @@ clai (pronounced "clay") is a command line ai assistant that uses LLM to answer 
 ## Installation
 
 ```bash
-npm i @pr4j3sh/clai
+npm i -g @pr4j3sh/clai
 ```
 
 ## Usage
