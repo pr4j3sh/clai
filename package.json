@@ -45,6 +45,6 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "@pr4j3sh/ai": "^1.0.0"
+    "@pr4j3sh/ai": "^1.0.2"
   }
 }
